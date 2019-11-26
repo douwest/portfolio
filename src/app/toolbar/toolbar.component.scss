@@ -1,0 +1,9 @@
+@import '../../shared/css/fonts.scss';
+
+.toolbar{
+
+    &__logo{
+        font-family: $font-primary;
+        font-size: 24px;
+    }
+}
