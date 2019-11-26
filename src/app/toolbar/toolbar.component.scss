@@ -1,9 +1,24 @@
 @import '../../shared/css/fonts.scss';
+@import '../../shared/css/colors.scss';
 
-.toolbar{
+.toolbar {
 
-    &__logo{
-        font-family: $font-primary;
-        font-size: 24px;
+  align-items: center;
+  box-shadow: -1px 13px 23px -14px $color-shadow;
+
+  &__logo > * {
+    display: inline;
+    margin: 5px;
+    font-family: $font-primary;
+    font-size: 24px;
+  }
+
+  &__upload {
+
+    &--button{
+      position: absolute;
+      right: 15px;
     }
+  }
+
 }

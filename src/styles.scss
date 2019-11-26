@@ -2,5 +2,13 @@
 @import "./shared/css/colors.scss";
 @import "./shared/css/fonts.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: $font-primary; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  background-color: $color-background;
+}
