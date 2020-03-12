@@ -1,11 +1,16 @@
 <mat-toolbar class="toolbar" color="primary">
-  <span class="toolbar__logo">
-    <fa-icon class="toolbar__logo--icon" [icon]="faChartPie"></fa-icon>
-    <h1 class="toolbar__logo--title">douwe</h1>
+
+  <span class="toolbar__menu">
+    <button mat-icon-button >
+        <fa-icon class="toolbar__menu--button-icon" [icon]="faBars"></fa-icon>
+    </button>
   </span>
-  <span class="toolbar__upload--button">
-    <button mat-raised-button color="accent">
-        hoi
+
+  <span class="toolbar__logo">
+
+    <button mat-icon-button (click)="toggle()">
+      <fa-icon class="toolbar__logo--icon" [icon]="faOutlineLogo" *ngIf="!isOpen"></fa-icon>
+      <fa-icon class="toolbar__logo--icon" [icon]="faSolidLogo" *ngIf="isOpen"></fa-icon>
     </button>
   </span>
 </mat-toolbar>
