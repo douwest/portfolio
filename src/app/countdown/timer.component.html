@@ -1,0 +1,10 @@
+<span class="timer">
+<!--  <countdown #countdownDays class="timer&#45;&#45;days" [config]="daysConfig" (event)="handleEvent({event : $event})"></countdown>-->
+  <countdown #countdownHours class="timer--hours" [config]="hourConfig" (event)="handleEvent({event : $event})"></countdown>
+  <countdown #countdownMinutes class="timer--minutes" [config]="minuteConfig" (event)="handleEvent({event : $event})"></countdown>
+  <countdown #countdownSeconds class="timer--seconds" [config]="secondConfig" (event)="handleEvent({event : $event})"></countdown>
+  <countdown #countdownMilliseconds class="timer--milliseconds" [config]="millisecondConfig" (event)="handleEvent({event : $event})"></countdown>
+</span>
+
+<iframe *ngIf="!done" class="video"  width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe *ngIf="done" class="video"  width="560" height="315" src="https://www.youtube.com/embed/zLY0Zxi-rJo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

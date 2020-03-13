@@ -1,14 +1,14 @@
 <mat-toolbar class="toolbar" color="primary">
 
   <span class="toolbar__menu">
-    <button mat-icon-button >
+    <button class="menu" mat-icon-button >
         <fa-icon class="toolbar__menu--button-icon" [icon]="faBars"></fa-icon>
     </button>
   </span>
 
   <span class="toolbar__logo">
 
-    <button mat-icon-button (click)="toggle()">
+    <button class="heart"mat-icon-button (click)="toggle()">
       <fa-icon class="toolbar__logo--icon" [icon]="faOutlineLogo" *ngIf="!isOpen"></fa-icon>
       <fa-icon class="toolbar__logo--icon" [icon]="faSolidLogo" *ngIf="isOpen"></fa-icon>
     </button>

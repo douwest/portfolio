@@ -1,0 +1,26 @@
+@import '../../shared/css/fonts.scss';
+@import '../../shared/css/colors.scss';
+
+.timer {
+  display: inline-flex;
+  padding-top: 75vw;
+  padding-bottom: 5vw;
+  width: 100vw;
+
+  > * {
+    color: white;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    display: block;
+    font-size: 120px;
+    font-family: $font-primary;
+  }
+
+}
+
+.video {
+  position:absolute;
+  width: 0 !important;
+  height: 0 !important;
+}
